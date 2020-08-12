@@ -104,7 +104,7 @@ def run(ctx: protocol_api.ProtocolContext):
         ctx.comment('###############################################')
         ctx.comment('VALORES DE VARIABLES')
         ctx.comment(' ')
-        ctx.comment('Número de muestras: ' + str(VOLUME_PCR_SAMPLE)+ ' ul') 
+        ctx.comment('Número de muestras: ' + str(NUM_SAMPLES)) 
         ctx.comment('Volumen a transferir a la placa PCR: ' + str(VOLUME_PCR_SAMPLE)+ ' ul') 
         ctx.comment('Foto-sensible: ' + str(PHOTOSENSITIVE)) 
         ctx.comment('###############################################')

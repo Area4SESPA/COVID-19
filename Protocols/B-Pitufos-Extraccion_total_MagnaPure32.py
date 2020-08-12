@@ -1177,6 +1177,9 @@ def run(ctx: protocol_api.ProtocolContext):
                         pickup_height = pickup_height, rinse = False, avoid_droplet = False, wait_time = 0, blow_out = True, touch_tip = False,
                         drop_height = 3)
             
+            m300.move_to(final_destinations[i].top(0))
+            m300.air_gap(Sample.air_gap_vol_bottom) #air gap
+
             if recycle_tip == True:
                 m300.return_tip()
             else:

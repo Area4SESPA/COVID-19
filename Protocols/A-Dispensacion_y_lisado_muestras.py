@@ -32,7 +32,7 @@ PHOTOSENSITIVE          = False # True if it has photosensitive reagents
 
 
 run_id                      = 'dispensacion_y_lisado_muestras'
-recycle_tip                 = True # Do you want to recycle tips? It shoud only be set True for testing
+recycle_tip                 = False # Do you want to recycle tips? It shoud only be set True for testing
 air_gap_vol_sample          = 25
 volume_mix                  = 500 # Volume used on mix
 x_offset                    = [0,0]

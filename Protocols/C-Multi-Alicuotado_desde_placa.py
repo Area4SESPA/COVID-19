@@ -96,7 +96,7 @@ def run(ctx: protocol_api.ProtocolContext):
     class Reagent:
 
         def __init__(self, name, flow_rate_aspirate, flow_rate_dispense, 
-        disposal_volume, rinse, max_volume_allowed, h_cono, v_fondo, air_gap_vol_top = 0, air_gap_vol_bottom = 0, tip_recycling = 'none', dead_vol = 700, delay = 0):
+        disposal_volume, rinse, max_volume_allowed, h_cono, v_fondo, air_gap_vol_top = 0, air_gap_vol_bottom = air_gap_vol, tip_recycling = 'none', dead_vol = 700, delay = 0):
             self.name = name
             self.flow_rate_aspirate = flow_rate_aspirate
             self.flow_rate_dispense = flow_rate_dispense
@@ -133,7 +133,7 @@ def run(ctx: protocol_api.ProtocolContext):
         ctx.comment('###############################################')
         ctx.comment('VALORES DE VARIABLES')
         ctx.comment(' ')
-        ctx.comment('Número de muestras: ' + str(VOLUME_PCR_SAMPLE)+ ' ul') 
+        ctx.comment('Número de muestras: ' + str(NUM_SAMPLES)) 
         ctx.comment('Volumen a transferir a la placa PCR: ' + str(VOLUME_PCR_SAMPLE)+ ' ul') 
         ctx.comment('Volumen a transferir a los pitufos: ' + str(VOLUME_ARCHIVE_SAMPLE)+ ' ul') 
         ctx.comment('Columnas a ser ignoradas en la placa PCR: ' + str(PCR_PLATE_COL_OFFSET))
